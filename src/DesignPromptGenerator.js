@@ -10,6 +10,7 @@ const API_KEY = process.env.REACT_APP_API_KEY;
 const DesignPromptGenerator = () => {
   const [prompt, setPrompt] = useState("");
   const [copy, setCopy] = useState("Copy")
+  const [copied, setCopied] = useState(false)
 
   const generatePrompt = async () => {
     try {
@@ -39,6 +40,9 @@ const DesignPromptGenerator = () => {
         generatePrompt();
       }
 
+      setCopied(false);
+      setCopy('Copy');
+
       
       
     } catch (error) {
@@ -48,8 +52,10 @@ const DesignPromptGenerator = () => {
   };
 
   const showAlert = () => {
-    alert('Prompt copied to your clipboard')
-    setCopy('Copied')
+    if(prompt.length > 1) {
+      setCopy('Copied')
+      setCopied(true)
+    }
   }
   
  
@@ -68,7 +74,7 @@ const DesignPromptGenerator = () => {
         </div>
         <p>Thank you for supporting Crowwwn</p>
         <div className="modal">
-          <Modal/>
+          {copied ? <Modal/> : null}
         </div>
     </div>
   );
