@@ -1,43 +1,79 @@
 h1 {
     text-align: center;
-    margin-left: 100px;
-    margin-right: 100px;
+    width: 709px;
+    margin-bottom: 80px;
+    font-size: 44px;
+    font-weight: 900;
+    line-height: 64px;
+    margin-top: 32px;
 }
 
 .prompt{
     display: flex;
     flex-direction: column;
     align-items: center;
+    font-family: 'Roboto';
+}
+
+.prompt-text {
+    width: 919px;
+    font-weight: 400;
+    text-align: center;
+    margin-top: 32px;
+    margin-bottom: 80px;
 }
 
 .logo {
-    width: 10%;
-    margin-top: 10px;
+    width: 80px;
+    height: 80px;
+    margin-top: 104px;
 }
 
 .btns {
     display: flex;
     flex-direction: column;
-    width: 20%;
+    width: 325px;
 }
 
 .prompt-btn{
     background-color: #3F66EF;
     color: white;
-    border: 1px solid lightgray;
+    border: none;
     margin-bottom: 10px;
-    font-size: 22px;
-    padding: 7px;
-    border-radius: 5px;
+    font-size: 20px;
+    padding: 12px 86px;
+    border-radius: 4px;
+    width: 326px;
+    height: 44px;
+    font-size: 20px;
+    line-height: 20px;
+    gap: 10px;
 }
 
 .copy-btn{
-    color: #3F66EF;
+    color: #656A7B;
     background-color: white;
-    border: 1px solid lightgray;
-    font-size: 22px;
-    padding: 7px;
+    width: 326px;
+    border: 1px solid #D7DCE4;
+    font-size: 20px;
+    padding: 12px 33px;
     border-radius: 5px;
+    height: 44px;
+}
+
+.loading-btn{
+    background-color: #3F66EF;
+    color: white;
+    border: none;
+    margin-bottom: 10px;
+    font-size: 20px;
+    padding: 12px 86px;
+    border-radius: 4px;
+    width: 326px;
+    height: 44px;
+    font-size: 20px;
+    line-height: 20px;
+    gap: 10px;
 }
 
 p{
@@ -45,8 +81,8 @@ p{
     position: fixed;
     bottom: 0;
     margin-bottom: 100px;
+    font-family: 'Roboto';
 }
-
 .modal {
     position: fixed;
     bottom: 0;
